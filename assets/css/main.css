@@ -1,4 +1,6 @@
 @import url(../fontawesome/css/all.css);
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Playwrite+AU+TAS:wght@100..400&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -48,6 +50,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*----------------------------------------------------*/
+
 
 /*Main*/
 /*----------------------------------------------------*/
@@ -55,11 +59,14 @@ table {
 .wrapper{
 	display:flex;
 	flex-direction: column;
-	background-color: #f2f2f2;
+	background-color: #ECF0F3;
+	overflow: hidden;
+	overflow-y: hidden;
+	overflow-x:hidden;
 }
 
 section{
-	background-color: chocolate;
+	background-color: rgb(175, 159, 148);
 	background-size: cover;
 	background-position: center;
 	border-radius: 3em;
@@ -68,7 +75,7 @@ section{
 
 @media only screen and (max-width: 600px){
 	section{
-		background-color: chocolate;
+		background-color: #f2f2f2;
 		background-size: cover;
 		background-position: center;
 		border-radius: 3em;
@@ -76,8 +83,20 @@ section{
 	}
 }
 
+h1,h2,h3,h4{
+	font-family:"Playwrite AU TAS", cursive;
+}
+
+p{
+	font-family: "PT Sans Narrow", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	margin-top: 1em;
+}
+
 a{
 	color: #f2f2f2;
+	text-decoration: none;
 }
 
 a:hover{
@@ -87,6 +106,9 @@ a:hover{
 #headSection{
     width: 99vw;
     height: 99vh;
+	display: flex;
+	flex-direction: column;
+	gap: 10em;
     background-image: url(../css/picscss/headbackground.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,12 +117,8 @@ a:hover{
 
   @media only screen and (max-width: 600px){
 	#headSection{
-		width: 99vw;
+		width: 98vw;
 		height: 85vh;
-		background-image: url(../css/picscss/headbackground.png);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
 	  }
   }
 
@@ -113,9 +131,6 @@ header{
 
 @media only screen and (max-width: 600px){
 	header{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
 		margin: 20px ;
 	}
 }
@@ -141,13 +156,11 @@ header{
 
 @media only screen and (max-width: 600px){
 	.leftcontainer{
-		display: flex;
 		flex-direction: row;
 		gap: 5px;
 	}
 	#Logo{
 		width: 75px;
-		height: auto;
 	}
 	
 	.icons{
@@ -164,6 +177,7 @@ header{
 }
 
 .navigater, .navigater2{
+	font-size: 25px;
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -238,6 +252,10 @@ header{
     justify-content: flex-start;
   }
 
+  #sidebar a{
+	font-size: 16px;
+  }
+
  
 
   .sidebar li{
@@ -265,8 +283,13 @@ header{
 	font-size: 25px;
 	background-color:#000000;
 	padding: 1em;
-	border: #d4af36 solid 2px;
+	border:#f2f2f2 solid 2px;
 	border-radius: 40px;
+}
+
+
+.registercfa h3{
+	color: #d4af36;
 }
 
 @media only screen and (max-width: 600px){
@@ -276,30 +299,180 @@ header{
   }
 
 
+  .visitUs{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color:#f2f2f2;
+	background-color: rgba(36, 54, 81, 0.445);
+	width: 98%;
+	align-self: center;
+	padding: 1em;
+	
+  }
+
+  .visitUs h1{
+	font-family:Arial, Helvetica, sans-serif ;
+	font-size: 40px;
+}
+
+.visitUs :first-child{
+	font-size: 60px;
+}
+
+a.visitbutton{
+	font-family:Arial, Helvetica, sans-serif ;
+	background-color: #f2f2f2;
+	border-radius: 1em;
+	padding: 1em;
+	margin: 1em;
+}
+
+  .visitbutton{
+	color: #000000;
+	font-size: 40px;
+  }
+
+  .visitbutton:hover{
+	color: #0000007c;
+  }
+
+.visitUs p{
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 600px){
+	.visitUs{
+		background-color: rgba(36, 54, 81, 0.767);
+		width: 92%;
+		padding: 1em;
+	  }
+	
+	  .visitUs h1{
+		font-size: 25px;
+	}
+	
+	.visitUs :first-child{
+		font-size: 40px;
+	}
+	
+	a.visitbutton{
+		padding: 20px;
+		margin: 1em;
+	}
+	
+	  .visitbutton{
+		color: #000000;
+		font-size: 30px;
+	  }
+	
+	  .visitbutton:hover{
+		color: #0000007c;
+	  }
+	
+	.visitUs p{
+		font-size: 16px;
+	}
+}
+
+#welcome{
+	text-align: center;
+	background-color: transparent;
+	padding: 0em 10em;
+}
+
+#welcome p{
+	color:#000000;
+	font-size: 30px;
+	line-height: 1.3em;
+	letter-spacing: 1px;
+	text-wrap: wrap;
+	background-color: #f2f2f2;
+    box-shadow: -10px 16px 10px rgba(0, 0, 0, 0.1);
+	padding: 1em;
+	border-radius: 1em;
+}
+
+@media only screen and (max-width: 600px){
+	#welcome{
+	padding: 0em 1em;
+}
+
+#welcome p{
+	font-size: 16px;
+	line-height: 1em;
+	letter-spacing: 0.5px;
+}
+}
+
+
 #servicesSection{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #d4af36;
+	background-color: transparent;
 	background-size: cover;
 	background-position: center;
-	padding: 2em;
+	padding: 2em 10em;
 }
 
 .services_container{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	gap: 3em;
 	justify-content: space-between;
 	margin-top: 2em;
 }
 
 .service{
+	flex-basis: 0;
+	flex: 1 1 0;
 	background-color: #f2f2f2;
 	border-radius: 1em;
 	padding: 1em;
 	font-size: 20px;
+	text-align: center;
+}
+
+#catering img{
+	width: 300px;
+	height: auto;
+	clip-path: ellipse(100px 100px at 100px 100px);
+	margin-top: 1em;
+	margin-left: 4em;
+}
+
+#outdoor img{
+	width: 300px;
+	height: auto;
+	clip-path: ellipse(100px 100px at 100px 100px);
+	margin-top: 1em;
+	margin-left: 4em;
+}
+
+#valet img{
+	width: 300px;
+	height: auto;
+	clip-path: ellipse(100px 100px at 100px 100px);
+	margin-top: 1em;
+	margin-left: 4em;
+}
+
+.ourservices h1{
+	font-weight: 400;
+	font-size: 35px;
+}
+
+
+
+.service p, .service h2{
+	padding: 1em;
+	background-color:#d4af36a6;
+	border-radius: 1em;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.623);
 }
 
 @media only screen and (max-width: 600px){
@@ -314,6 +487,9 @@ header{
 	}
 
   }
+
+
+  
 
 .image{
 	width: 300px;
@@ -330,7 +506,7 @@ header{
 	justify-content: center;
 	align-items: center;
 	gap: 3em;
-	background-color: #243651ff;
+	background-color: transparent;
 	background-size: cover;
 	background-position: center;
 	padding: 2em;
@@ -342,7 +518,10 @@ header{
 	justify-content: center;
 	align-items: center;
 	gap: 3em;
+	flex-basis: 0;
+	flex: 1 1 0;
 	background-color:#f2f2f2;
+	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.623);
 	border-radius: 1em;
 	padding: 1em;
 	font-size: 20px;
@@ -368,7 +547,7 @@ header{
 #footerSection{
 	display: flex;
 	flex-direction: column;
-	background-color: #000000;
+	background-color: rgba(36, 54, 81, 0.918);
 	padding: 2em;
 }
 
@@ -385,7 +564,10 @@ header{
 	display: flex;
 	flex-direction: column;
 	gap: 3em;
-	font-size: 20px;
+}
+
+.contacts h2{
+	font-size: 10px;
 }
 
 .ficons{
@@ -425,8 +607,6 @@ input{
 	}
 	
 	.upperfooter{
-		flex-direction: column;
-		justify-content: space-evenly;
 		gap: 20px;
 		padding-bottom: 10px;
 	}
