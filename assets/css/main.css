@@ -108,6 +108,7 @@ a:hover{
     height: 99vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-end;
 	gap: 10em;
     background-image: url(../css/picscss/headbackground.png);
     background-size: cover;
@@ -122,11 +123,23 @@ a:hover{
 	  }
   }
 
+#stic{
+	position: fixed;
+	top:0;
+	z-index: 999;
+}
+
 header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin: 2em ;
+}
+
+@media only screen and (min-width: 600px){
+	header{
+		gap: 25em ;
+	}
 }
 
 @media only screen and (max-width: 600px){
@@ -138,20 +151,33 @@ header{
 .leftcontainer{
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	gap: 1em;
 }
 #Logo{
 	width: 125px;
 	height: auto;
+	border-radius: 10px;
 }
+
+
 
 .icons{
 	display: flex;
 	flex-direction: column;
-	gap: 1em;
-	color:#f2f2f2;
-	margin: 0em 0em 0em 2em;
+	gap: 0.5em;
+	margin: 0em 0em 0em 0em;
 	font-size: 25px;
+}
+
+.icons a{
+	box-shadow: -3px 0 3px rgba(0, 0, 0, 0.521);
+	background-color: rgba(0, 0, 0, 0.445);
+	background-position: center;
+	padding: 3px;
+	border-radius: 18px;
+	
 }
 
 @media only screen and (max-width: 600px){
@@ -160,12 +186,22 @@ header{
 	}
 	#Logo{
 		width: 75px;
+		box-shadow: -3px 0 3px rgba(0, 0, 0, 0.521);
 	}
 	
 	.icons{
 		margin: 0em 0em 0em 0px;
 		font-size: 18px;
+		gap:10px;
 		align-items: center;
+	}
+
+	.icons a{
+		box-shadow: -3px 0 3px rgba(0, 0, 0, 0.521);
+		background-color: rgba(0, 0, 0, 0.445);
+		background-position: center;
+		border-radius: 16px;
+		padding: 5px;
 	}
 
 	.sicons{
@@ -191,6 +227,10 @@ header{
     margin-top: 0em;
 }
 
+.navigater2{
+	background-color: #0000008f;
+}
+
  @media only screen and (max-width: 600px){
 	
 	.navigater{
@@ -198,6 +238,9 @@ header{
 		padding-right: 20px;
 		margin-top: 0;
 		right: 1;
+	}
+	.navigater2{
+		background-color: transparent;
 	}
  }
 
@@ -243,7 +286,7 @@ header{
     right: 0;
     height: 100vh;
     width: 85vw;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(36, 54, 81, 0.308);
     backdrop-filter: blur(12px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     list-style: none;
@@ -275,12 +318,17 @@ header{
     .menu-button{
       display:flex;
 	  margin: 10px 0px 0px 190px;
+	  background-color: #00000096;
+	  border-radius: 3px;
+	  box-shadow: -3px 0 3px rgba(0, 0, 0, 0.473);
     }
   }
 
 .registercfa{
+	right: 0;
 	font-size: 25px;
 	background-color:#000000;
+	box-shadow: -3px 0 3px rgba(0, 0, 0, 0.521);
 	padding: 1em;
 	border:#f2f2f2 solid 2px;
 	border-radius: 40px;
@@ -307,6 +355,7 @@ header{
 	width: 98%;
 	align-self: center;
 	padding: 1em;
+	margin-bottom: 10em;
 	
   }
 
@@ -345,6 +394,7 @@ a.visitbutton{
 		background-color: rgba(36, 54, 81, 0.767);
 		width: 92%;
 		padding: 1em;
+		margin-bottom: 12em;
 	  }
 	
 	  .visitUs h1{
