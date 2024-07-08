@@ -3,49 +3,56 @@
     <head>
         <title>Eva_Photo_Gallery</title>
         <meta charset="utf-8/>"/>
-        <meta name="viewport" content="width=viewport-width, intial-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="assets/css/Gallery.css"/>
     </head>
     <body>
         <div class="wrapper">
+                <div>
+                  <h1>Photo Gallery</h1>
+                </div>
                 <div class="row">
                     <div class="column">
-                      <img src="images/Galleryy/wedding.jpg">
-                      <img src="images/Galleryy/rocks.jpg">
-                      <img src="images/Galleryy/falls2.jpg">
-                      <img src="images/Galleryy/paris.jpg">
-                      <img src="images/Galleryy/nature.jpg">
-                      <img src="images/Galleryy/mist.jpg">
-                      <img src="images/Galleryy/paris.jpg">
+                      <div><img id="1" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0002.jpg"></div>
+                      <div><img id="2" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0003.jpg"></div>
+                      <div><img id="3" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0004.jpg"></div>
+                      <div><img id="4" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0005.jpg"></div>
+                      <div><img id="5" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0006.jpg"></div>
+                      <div><img id="6" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0007.jpg"></div>
+                      <div><img id="7" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0008.jpg"></div>
                     </div>
                     <div class="column">
-                      <img src="images/Galleryy/underwater.jpg">
-                      <img src="images/Galleryy/ocean.jpg">
-                      <img src="images/Galleryy/wedding.jpg">
-                      <img src="images/Galleryy/mountainskies.jpg">
-                      <img src="images/Galleryy/rocks.jpg">
-                      <img src="images/Galleryy/underwater.jpg">
+                      <div><img id="8" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0009.jpg"></div>
+                      <div><img id="9" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0017.jpg"></div>
+                      <div><img id="10"onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0011.jpg"></div>
+                      <div><img id="11"onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0012.jpg"></div>
+                      <div><img id="12"onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0013.jpg"></div>
+                      <div><img id="13"onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0014.jpg"></div>
                     </div>
                     <div class="column">
-                      <img src="images/Galleryy/wedding.jpg">
-                      <img src="images/Galleryy/rocks.jpg">
-                      <img src="images/Galleryy/falls2.jpg">
-                      <img src="images/Galleryy/paris.jpg">
-                      <img src="images/Galleryy/nature.jpg">
-                      <img src="images/Galleryy/mist.jpg">
-                      <img src="images/Galleryy/paris.jpg">
+                      <div><img id="14" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0015.jpg"></div>
+                      <div><img id="15" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0016.jpg"></div>
+                      <div><img id="16" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0010.jpg"></div>
+                      <div><img id="17" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0018.jpg"></div>
+                      <div><img id="18" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0019.jpg"></div>
+                      <div><img id="19" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0020.jpg"></div>
+                      <div><img id="20" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0002.jpg"></div>
                     </div>
                     <div class="column">
-                      <img src="images/Galleryy/underwater.jpg">
-                      <img src="images/Galleryy/ocean.jpg">
-                      <img src="images/Galleryy/wedding.jpg">
-                      <img src="images/Galleryy/mountainskies.jpg">
-                      <img src="images/Galleryy/rocks.jpg">
-                      <img src="images/Galleryy/underwater.jpg">
-                    </div>
+                      <div><img id="21" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0007.jpg"></div>
+                      <div><img id="22" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0012.jpg"></div>
+                      <div><img id="23" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0015.jpg"></div>
+                      <div><img id="24" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0004.jpg"></div>
+                      <div><img id="25" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0017.jpg"></div>
+                      <div><img id="26" onclick="GFG_click(this.id)" src="images/Galleryy/IMG-20240707-WA0003.jpg"></div>
+                    </div>             
                   </div>
-            </section>
+                  <div id="myModal" class="modal">
+                  <span class="close" >&times;</span>
+                  <img class="modal-content" id="img01">
+                  </div>
 
         </div>
+        <script src="assets/js/gallery.js"></script>
     </body>
 </html>
