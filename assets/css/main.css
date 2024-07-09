@@ -1,6 +1,7 @@
 @import url(../fontawesome/css/all.css);
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Playwrite+AU+TAS:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -69,7 +70,7 @@ section{
 	background-color: rgb(175, 159, 148);
 	background-size: cover;
 	background-position: center;
-	border-radius: 3em;
+	border-radius: 1em;
 	margin: 0.5em 0.5em 1em 0.5em;
 }
 
@@ -78,13 +79,13 @@ section{
 		background-color: #f2f2f2;
 		background-size: cover;
 		background-position: center;
-		border-radius: 15px;
+		border-radius: 12px;
 		margin: 5px 5px 10px 5px;
 	}
 }
 
 h1,h2,h3,h4{
-	font-family:"Playwrite AU TAS", cursive;
+	font-family: "Yantramanav", sans-serif;
 }
 
 p{
@@ -97,6 +98,8 @@ p{
 a{
 	color: #f2f2f2;
 	text-decoration: none;
+	font-family: "Yantramanav", sans-serif;
+	font-weight: 500;
 }
 
 a:hover{
@@ -127,12 +130,14 @@ a:hover{
 	position: fixed;
 	top:0;
 	z-index: 999;
+	width: 100%;
 }
 
 header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: stretch;
 	margin: 2em ;
 }
 
@@ -214,7 +219,7 @@ header{
 }
 
 .navigater, .navigater2{
-	font-size: 25px;
+	font-size: 20px;
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -327,6 +332,7 @@ header{
 .registercfa{
 	right: 0;
 	font-size: 25px;
+	font-weight: 600;
 	background-color:#000000;
 	box-shadow: -3px 0 3px rgba(0, 0, 0, 0.521);
 	padding: 1em;
@@ -336,7 +342,7 @@ header{
 
 
 .registercfa h3{
-	color: #d4af36;
+	color: #ecd380;
 }
 
 @media only screen and (max-width: 600px){
@@ -351,7 +357,8 @@ header{
 	flex-direction: column;
 	align-items: center;
 	color:#f2f2f2;
-	background-color: rgba(36, 54, 81, 0.445);
+	background-color: rgba(36, 54, 81, 0.911);
+	background-position: center;
 	width: 98%;
 	align-self: center;
 	padding: 1em;
@@ -360,25 +367,29 @@ header{
   }
 
   .visitUs h1{
-	font-family:Arial, Helvetica, sans-serif ;
-	font-size: 40px;
-}
-
-.visitUs :first-child{
+	font-family:"Yantramanav", sans-serif;
+	font-weight: 600;
 	font-size: 60px;
 }
 
+.visitUs :first-child{
+	font-size: 120px;
+	font-family: "Yantramanav", sans-serif;
+	font-weight: 800;
+}
+
 a.visitbutton{
-	font-family:Arial, Helvetica, sans-serif ;
 	background-color: #f2f2f2;
-	border-radius: 1em;
-	padding: 1em;
-	margin: 1em;
+	border-radius: 0.5em;
+	padding: 0.5em 0.7em;
+	margin: 1em 0em 0em;
 }
 
   .visitbutton{
 	color: #000000;
-	font-size: 40px;
+	font-family:"Yantramanav", sans-serif;
+	font-weight:600;
+	font-size: 50px;
   }
 
   .visitbutton:hover{
@@ -386,19 +397,20 @@ a.visitbutton{
   }
 
 .visitUs p{
-	font-size: 20px;
+	font-family:"Yantramanav", sans-serif;
+	font-weight:300;
+	font-size: 30px;
 }
 
 @media only screen and (max-width: 600px){
 	.visitUs{
-		background-color: rgba(36, 54, 81, 0.767);
 		width: 92%;
 		padding: 1em;
 		margin-bottom: 12em;
 	  }
 	
 	  .visitUs h1{
-		font-size: 25px;
+		font-size: 20px;
 	}
 	
 	.visitUs :first-child{
@@ -406,8 +418,8 @@ a.visitbutton{
 	}
 	
 	a.visitbutton{
-		padding: 20px;
-		margin: 1em;
+		padding: 15px 20px;
+		border-radius: 0.3em;
 	}
 	
 	  .visitbutton{
@@ -425,21 +437,25 @@ a.visitbutton{
 }
 
 #welcome{
+	font-family: 'Playwrite AU TAS';
 	text-align: center;
 	background-color: transparent;
 	padding: 0em 10em;
 }
 
 #welcome p{
-	color:#000000;
-	font-size: 30px;
-	line-height: 1.3em;
+	color:#ecd380;
+	font-family: 'Playwrite AU TAS';
+	font-size: 25px;
+	line-height: 2em;
 	letter-spacing: 1px;
 	text-wrap: wrap;
-	background-color: #f2f2f2;
-    box-shadow: -10px 16px 10px rgba(0, 0, 0, 0.1);
+	background-color: #070707ef;
+    backdrop-filter: blur(6px);
+    box-shadow: -10px 16px 10px rgba(0, 0, 0, 0.301);
 	padding: 1em;
 	border-radius: 1em;
+	border: #ecd380 solid 3px;
 }
 
 @media only screen and (max-width: 600px){
@@ -449,7 +465,7 @@ a.visitbutton{
 
 #welcome p{
 	font-size: 16px;
-	line-height: 1em;
+	line-height: 1.7em;
 	letter-spacing: 0.5px;
 	margin: 3em 0em
 }
@@ -467,6 +483,11 @@ a.visitbutton{
 	padding: 2em 10em;
 }
 
+#servicesSection h1{
+	font-weight: 700;
+	font-size: 50px;
+}
+
 .services_container{
 	display: flex;
 	flex-direction: row;
@@ -477,11 +498,16 @@ a.visitbutton{
 	margin-top: 2em;
 }
 
+.services_container h2{
+	font-weight: 600;
+	font-size: 25px;
+}
+
 .service{
 	flex-basis: 0;
 	flex: 1 1 0;
-	background-color: #f2f2f2;
-	border-radius: 1em;
+	background-color: rgb(36, 54, 81);
+	border-radius: 0.5em;
 	padding: 1em;
 	font-size: 20px;
 	text-align: center;
@@ -532,15 +558,12 @@ a.visitbutton{
 }
 
 
-.ourservices h1{
-	font-weight: 400;
-	font-size: 35px;
-}
+
 
 .service p, .service h2{
 	padding: 1em;
-	background-color:#d4af36a6;
-	border-radius: 1em;
+	background-color:#dfe1eb;
+	border-radius: 0.5em;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.623);
 }
 
@@ -555,9 +578,9 @@ a.visitbutton{
 		margin-top: 5px;
 	}
 
-	.ourservices h1{
-		font-weight: 500;
-		font-size: 22px;
+	#servicesSection h1{
+		font-weight: 700;
+		font-size: 33px;
 	}
 
 	.service p, .service h2{
