@@ -53,11 +53,6 @@ table {
 /*----------------------------------------------------*/
 
 
-h1{
-  font-size: 40px;
-  margin: 20px;
-  align-self: center;
-}
 * {
   box-sizing: border-box;
 }
@@ -77,6 +72,170 @@ body {
 	overflow-y: hidden;
 	overflow-x:hidden;
   width: 100vw;
+}
+
+
+
+section{
+	background-color: #f2f2f2;
+	background-size: cover;
+	background-position: center;
+  padding: 0px 5px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px){
+	section{
+    padding: 0px 5px;
+    margin-bottom: 5px;
+  }
+}
+
+a{
+	color: #f2f2f2;
+	text-decoration: none;
+}
+
+a:hover{
+    color: #f0f0f093;
+  }
+
+#headersection{
+  display: flex;
+  flex-direction: column;
+  gap:2px;
+}
+
+header{
+  display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  background-color: black;
+  border-radius: 0.5em;
+  padding: 2em;
+}
+
+#Logo{
+	width: 125px;
+	height: auto;
+	border-radius: 10px;
+  
+}
+
+.icons{
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	margin: 0em 0em 0em 0em;
+	font-size: 25px;
+  align-self: center;
+}
+
+@media only screen and (max-width: 600px){
+	#Logo{
+		width: 75px;
+		box-shadow: -3px 0 3px rgba(0, 0, 0, 0.521);
+	}
+}
+
+.visitUs{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color:#f2f2f2;
+  background-image: url(../css/picscss/IMG-20240707-WA0020.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+	align-self: center;
+  width: 100%;
+  height: 40vh;
+	
+  }
+
+  .visitUs div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(36, 54, 81, 0.644);
+  height: 100%;
+  padding: 0em 3em ;
+  }
+
+  .visitUs h1{
+	font-family:Arial, Helvetica, sans-serif ;
+	font-size: 40px;
+  text-shadow: -3px 0 3px rgba(0, 0, 0, 0.521);
+}
+
+.visitUs :first-child{
+	font-size: 60px;
+}
+
+a.visitbutton{
+	font-family:Arial, Helvetica, sans-serif ;
+	background-color: #f2f2f2;
+	border-radius: 1em;
+	padding: 1em;
+	margin: 1em;
+}
+
+  .visitbutton{
+	color: #000000;
+	font-size: 40px;
+  }
+
+  .visitbutton:hover{
+	color: #0000007c;
+  }
+
+.visitUs p{
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 600px){
+	.visitUs{
+		width: 100%;
+		margin-bottom: 1em;
+    border-radius: 3px;
+    height: 30vh;
+	  }
+
+    .visitUs div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(36, 54, 81, 0.267);
+      height: 100%;
+      padding: 20px 10px 0px;
+      }
+	
+	  .visitUs h1{
+		font-size: 25px;
+	}
+	
+	.visitUs :first-child{
+		font-size: 40px;
+	}
+	
+	a.visitbutton{
+		padding: 20px;
+		margin: 1em;
+	}
+	
+	  .visitbutton{
+		color: #000000;
+		font-size: 30px;
+	  }
+	
+	  .visitbutton:hover{
+		color: #0000007c;
+	  }
+	
+	.visitUs p{
+		font-size: 16px;
+    text-shadow: -3px 0 3px rgb(0, 0, 0);
+	}
 }
 
 .row {
@@ -101,6 +260,15 @@ body {
 }
 
 .column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.column video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -211,4 +379,42 @@ body {
   .column {
     height: 1000px;
   }
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(199, 199, 199, 0.8);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

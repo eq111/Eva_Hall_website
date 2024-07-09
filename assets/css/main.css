@@ -110,7 +110,7 @@ a:hover{
 	flex-direction: column;
 	justify-content: flex-end;
 	gap: 10em;
-    background-image: url(../css/picscss/headbackground.png);
+    background-image: url(../css/picscss/headbackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -317,7 +317,7 @@ header{
     }
     .menu-button{
       display:flex;
-	  margin: 10px 0px 0px 190px;
+	  margin: 10px 0px 0px 200px;
 	  background-color: #00000096;
 	  border-radius: 3px;
 	  box-shadow: -3px 0 3px rgba(0, 0, 0, 0.473);
