@@ -185,6 +185,24 @@ header{
 	
 }
 
+.translation{
+    display: flex;
+    gap: 1em;
+    font-size: 20px;
+    padding: 1px 2px;
+    margin: 5px 30px;
+    
+}
+
+.translation a{
+    color: #ffffff;
+}
+
+.translation a :hover{
+    color: rgb(22, 128, 128);
+
+}
+
 @media only screen and (max-width: 600px){
 	.leftcontainer{
 		gap: 5px;
@@ -215,6 +233,13 @@ header{
 		gap: 3px;
 		color:#f2f2f2;
 		font-size: 15px;
+	}
+
+	.translation{
+		gap: 0.7em;
+		font-size: 18px;
+		margin: 5px 8px;
+		
 	}
 }
 
@@ -467,7 +492,7 @@ a.visitbutton{
 @media only screen and (max-width: 600px){
 	#welcome{
 	padding: 0em 1em;
-}
+	}
 
 #welcome p{
 	font-size: 14px;
@@ -476,7 +501,7 @@ a.visitbutton{
 	line-height: 1.7em;
 	letter-spacing: 0.5px;
 	margin: 3em 0em
-}
+	}
 }
 
 
@@ -740,24 +765,6 @@ input{
 	font-size: 15px;
 }
 
-.translation{
-    display: flex;
-    gap: 1em;
-    font-size: 20px;
-    padding: 1px 2px;
-    margin: 5px 30px;
-    
-}
-
-.translation a{
-    color: #ffffff;
-}
-
-.translation a :hover{
-    color: rgb(22, 128, 128);
-
-}
-
 .copyright{
 	display: flex;
 	justify-content: center;
@@ -797,11 +804,8 @@ input{
 		font-size: 20px;
 	}
 
-	.translation{
-		gap: 0.7em;
-		font-size: 18px;
-		margin: 5px 8px;
-		
+	.translationfooter{
+		display: none;
 	}
 	
 	.copyright{
