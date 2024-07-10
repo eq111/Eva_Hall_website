@@ -1,6 +1,6 @@
 @import url(../fontawesome/css/all.css);
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Playwrite+AU+TAS:wght@100..400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Scheherazade+New:wght@400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -74,6 +74,8 @@ section{
 	margin: 0.5em 0.5em 1em 0.5em;
 }
 
+
+
 @media only screen and (max-width: 600px){
 	section{
 		background-color: #f2f2f2;
@@ -85,11 +87,11 @@ section{
 }
 
 h1,h2,h3,h4{
-	font-family: "Yantramanav", sans-serif;
+    font-family: "Scheherazade New", serif;
 }
 
 p{
-	font-family: "Yantramanav", sans-serif;
+    font-family: "Scheherazade New", serif;
 	font-weight: 300;
 	font-style: normal;
 	margin-top: 1em;
@@ -98,13 +100,15 @@ p{
 a{
 	color: #f2f2f2;
 	text-decoration: none;
-	font-family: "Yantramanav", sans-serif;
+    font-family: "Scheherazade New", serif;
 	font-weight: 500;
 }
 
 a:hover{
     color: #f0f0f093;
   }
+
+
 
 #headSection{
     width: 99vw;
@@ -367,7 +371,7 @@ header{
   }
 
   .visitUs h1{
-	font-family:"Yantramanav", sans-serif;
+    font-family: "Scheherazade New", serif;
 	font-weight: 600;
 	font-size: 60px;
 }
@@ -387,7 +391,7 @@ a.visitbutton{
 
   .visitbutton{
 	color: #000000;
-	font-family:"Yantramanav", sans-serif;
+    font-family: "Scheherazade New", serif;
 	font-weight:600;
 	font-size: 50px;
   }
@@ -397,7 +401,7 @@ a.visitbutton{
   }
 
 .visitUs p{
-	font-family:"Yantramanav", sans-serif;
+    font-family: "Scheherazade New", serif;
 	font-weight:300;
 	font-size: 30px;
 }
@@ -437,7 +441,8 @@ a.visitbutton{
 }
 
 #welcome{
-	font-family: 'Playwrite AU TAS';
+	font-family: "Amiri", serif;
+    font-weight: 400;
 	text-align: center;
 	background-color: transparent;
 	padding: 0em 10em;
@@ -450,7 +455,6 @@ a.visitbutton{
 
 #welcome p{
 	color:#ecd380;
-	font-family: 'Playwrite AU TAS';
 	font-size: 25px;
 	line-height: 2em;
 	letter-spacing: 1px;
@@ -512,8 +516,9 @@ a.visitbutton{
 }
 
 .service p{
-	font-family: "Yantramanav", sans-serif;
+    font-family: "Scheherazade New", serif;
 	font-weight: 300;
+    line-height: 1.5em;
 	text-align: left;
 }
 
@@ -526,56 +531,6 @@ a.visitbutton{
 	padding: 1em;
 	font-size: 20px;
 	text-align: left;
-}
-
-#catering img{
-	display: none;
-	width: 300px;
-	height: auto;
-	clip-path: ellipse(100px 100px at 100px 100px);
-	margin-top: 1em;
-	margin-left: 4em;
-}
-
-#outdoor img{
-	display: none;
-	width: 300px;
-	height: auto;
-	clip-path: ellipse(100px 100px at 100px 100px);
-	margin-top: 1em;
-	margin-left: 4em;
-}
-
-#valet img{
-	display: none;
-	width: 300px;
-	height: auto;
-	clip-path: ellipse(100px 100px at 100px 100px);
-	margin-top: 1em;
-	margin-left: 4em;
-}
-
-@media only screen and (max-width: 600px){
-	#catering img{
-		display: none;
-		width: 210px;
-		clip-path: ellipse(60px 60px at 60px 60px);
-		margin-left: 4em;
-	}
-	
-	#outdoor img{
-		display: none;
-		width: 210px;
-		clip-path: ellipse(60px 60px at 60px 60px);
-		margin-left: 4em;
-	}
-	
-	#valet img{
-		display: none;
-		width: 210px;
-		clip-path: ellipse(60px 60px at 60px 60px);
-		margin-left: 4em;
-	}
 }
 
 
@@ -693,7 +648,7 @@ a.visitbutton{
 	display: flex;
 	flex-direction: column;
 	background-color: rgba(36, 54, 81, 0.918);
-	padding: 2em;
+	padding: 2em 0em 1em;
 }
 
 .upperfooter{
@@ -729,6 +684,7 @@ form{
 	width: 600px;
 	height: 400px;
 	gap: 1em;
+    font-family: "Scheherazade New", serif;
 	font-size: 20px;
 }
 
@@ -758,18 +714,23 @@ input{
 
 }
 
-.copyright{
+.copyright ul{
 	display: flex;
-	justify-content: center;
-	gap: 0.5em;
+    flex-direction: column;
+    gap: 0.5em;
 	color: #f2f2f2;
 	margin-top: 0.7em;
+    font-family: "Scheherazade New", serif;
 	font-size: 18px;
+}
+
+.copyright li{
+    align-self: center;
 }
 
 @media only screen and (max-width: 600px){
 	#footerSection{
-		padding: 25px;
+		padding: 25px 20px 15px;
 	}
 	
 	.upperfooter{
@@ -803,6 +764,8 @@ input{
 		margin: 5px 8px;
 		
 	}
+	
+	
 	
 	.copyright{
 		margin-top: 20px;
