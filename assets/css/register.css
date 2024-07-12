@@ -110,6 +110,22 @@ align-self: center;
 margin-right: 2em;
 }
 
+section{
+
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(175, 159, 148);
+	background-size: cover;
+	background-position: center;
+	border-radius: 1em;
+	margin: 0.5em 0.5em 1em 0.5em;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+}
+
 @media only screen and (max-width: 600px){
 #Logo{
   width: 75px;
@@ -130,7 +146,6 @@ input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
-  display: inline-block;
   border: none;
   background: #f1f1f1;
 }

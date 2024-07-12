@@ -60,7 +60,7 @@ table {
 .wrapper{
 	display:flex;
 	flex-direction: column;
-	background-color: #f2f2f2;
+	background-color: #ffffff;
 	overflow: hidden;
 	overflow-y: hidden;
 	overflow-x:hidden;
@@ -76,10 +76,9 @@ section{
 
 @media only screen and (max-width: 600px){
 	section{
-		background-color: #f2f2f2;
 		background-size: cover;
 		background-position: center;
-		border-radius: 12px;
+		border-radius: 5px;
 		margin: 5px 5px 10px 5px;
 	}
 }
@@ -214,8 +213,8 @@ header{
 	
 	.icons{
 		margin: 0em 0em 0em 0px;
-		font-size: 18px;
-		gap:10px;
+		font-size: 16px;
+		gap:5px;
 		align-items: center;
 	}
 
@@ -264,7 +263,7 @@ header{
  @media only screen and (max-width: 600px){
 	
 	.navigater{
-		border-radius: 10px;
+		border-radius: 5px;
 		padding-right: 20px;
 		margin-top: 0;
 		right: 1;
@@ -468,25 +467,30 @@ a.visitbutton{
 	padding: 0em 10em;
 }
 
-.overlay{
-	background-image: url(../css/picscss/overlay.png);
-	background-size: cover;
-}
 
 #welcome p{
-	color:#ecd380;
+	color:#383B41;
 	font-family: 'Playwrite AU TAS';
 	font-size: 25px;
 	line-height: 2em;
 	letter-spacing: 1px;
 	text-wrap: wrap;
-	background-color: #070707e8;
-	background-blend-mode:overlay;
+	/*background-image: url(../css/picscss/3ce47cff-9aff-46c6-b8b7-ca16d115eb73.png)/*linear-gradient(rgb(12, 12, 12), rgb(26, 28, 29))*/ ;
+	background-size: 2200px 600px;
+	background-repeat: no-repeat;
+	background-position: center;
     backdrop-filter: blur(6px);
-    box-shadow: -10px 16px 10px rgba(0, 0, 0, 0.301);
-	padding: 1em;
+    box-shadow: -1px 16px -2px rgba(0, 0, 0, 0.301);
+	padding: 1.8em 0.8em;
 	border-radius: 1em;
-	border: #ecd380 solid 3px;
+	border: #F4DBA8 solid 2px;
+}
+
+@media only screen and (max-width: 1200px){
+#welcome p{
+	border-radius: 5px;
+
+}
 }
 
 @media only screen and (max-width: 600px){
@@ -497,7 +501,7 @@ a.visitbutton{
 #welcome p{
 	font-size: 14px;
 	font-weight: 300;
-
+	background-size: cover;
 	line-height: 1.7em;
 	letter-spacing: 0.5px;
 	margin: 3em 0em
@@ -508,12 +512,11 @@ a.visitbutton{
 #servicesSection{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	background-color: transparent;
 	background-size: cover;
 	background-position: center;
-	padding: 2em 10em;
+	padding: 2em 5em;
 }
 
 #servicesSection h1{
@@ -529,6 +532,8 @@ a.visitbutton{
 	gap: 1em;
 	justify-content: space-between;
 	margin-top: 1em;
+	padding: 0%;
+
 }
 
 .services_container h2{
@@ -545,62 +550,12 @@ a.visitbutton{
 .service{
 	flex-basis: 0;
 	flex: 1 1 0;
-	background-image: url(../css/picscss/pic04.jpg);
-	background-size: cover;
+	background-color: #203149;
+	/*background-image: url(../css/picscss/pic04.jpg);*/
 	border-radius: 0.5em;
-	padding: 1em;
+	padding: 10px;
 	font-size: 20px;
 	text-align: left;
-}
-
-#catering img{
-	display: none;
-	width: 300px;
-	height: auto;
-	clip-path: ellipse(100px 100px at 100px 100px);
-	margin-top: 1em;
-	margin-left: 4em;
-}
-
-#outdoor img{
-	display: none;
-	width: 300px;
-	height: auto;
-	clip-path: ellipse(100px 100px at 100px 100px);
-	margin-top: 1em;
-	margin-left: 4em;
-}
-
-#valet img{
-	display: none;
-	width: 300px;
-	height: auto;
-	clip-path: ellipse(100px 100px at 100px 100px);
-	margin-top: 1em;
-	margin-left: 4em;
-}
-
-@media only screen and (max-width: 600px){
-	#catering img{
-		display: none;
-		width: 210px;
-		clip-path: ellipse(60px 60px at 60px 60px);
-		margin-left: 4em;
-	}
-	
-	#outdoor img{
-		display: none;
-		width: 210px;
-		clip-path: ellipse(60px 60px at 60px 60px);
-		margin-left: 4em;
-	}
-	
-	#valet img{
-		display: none;
-		width: 210px;
-		clip-path: ellipse(60px 60px at 60px 60px);
-		margin-left: 4em;
-	}
 }
 
 
@@ -614,27 +569,38 @@ a.visitbutton{
 
 @media only screen and (max-width: 600px){
     #servicesSection{
-		padding: 15px;
+		padding: 10px;
 	}
 
 	.services_container{
-		flex-direction: column;
-		gap: 25px;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 10px;
 		margin-top: 5px;
+		background-color: #203149;
+		border-radius: 5px;
 	}
 
 	#servicesSection h1{
-		font-weight: 600;
-		font-size: 33px;
+		font-weight: 500;
+		font-size: 20px;
+		margin-bottom: 16px;
+		margin-left: 20px;
+		color: #243651;
 	}
 
 	.services_container h2{
 		font-weight: 400;
-		font-size: 20px;
+		font-size: 16px;
 	}
-	
+
+	.service{
+		width: min-content;
+	}
 	.service p{
-		font-size: 16;
+		font-size: 12;
+		max-width: 150px;
+		min-width: 140px;
 	}
   }
 
@@ -644,9 +610,6 @@ a.visitbutton{
 .image{
 	width: 300px;
 	height: auto;
-	mask-image: url("../css/shaps/bitmap.png");
-	mask-size: 300px 300px;
-	mask-repeat: no-repeat;
 	mask-position: top;
 }
 
@@ -671,7 +634,6 @@ a.visitbutton{
 	flex-basis: 0;
 	flex: 1 1 0;
 	background-color:#f2f2f2;
-	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.623);
 	border-radius: 1em;
 	padding: 1em;
 }
@@ -702,7 +664,6 @@ a.visitbutton{
 	.post{
 		gap: 15px;
 		border-radius: 10px;
-		box-shadow: -3px 0 3px rgba(0, 0, 0, 0.623);
 	}
 	
 	.post h1{
@@ -717,7 +678,7 @@ a.visitbutton{
 #footerSection{
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(36, 54, 81, 0.918);
+	background-color: rgba(10, 10, 10, 0.918);
 	padding: 2em;
 }
 
@@ -726,7 +687,7 @@ a.visitbutton{
 	flex-direction: row;
 	justify-content: space-evenly;
 	color: #f2f2f2;
-	border-bottom: #f2f2f2 solid 3px;
+	border-bottom: #f2f2f2 solid 1px;
 	padding-bottom: 1em;
 }
 
@@ -743,7 +704,7 @@ a.visitbutton{
 
 .ficons{
 	display: flex;
-	font-size: 25px;
+	font-size: 16px;
 	gap: 3em;
 	margin-top: 1em;
 }
@@ -769,7 +730,7 @@ input{
 	display: flex;
 	justify-content: center;
 	gap: 0.5em;
-	color: #f2f2f2;
+	color: #ffffff;
 	margin-top: 0.7em;
 	font-size: 18px;
 }
@@ -777,6 +738,7 @@ input{
 @media only screen and (max-width: 600px){
 	#footerSection{
 		padding: 25px;
+		border-radius: 5px;
 	}
 	
 	.upperfooter{
@@ -786,22 +748,28 @@ input{
 	
 	.contacts{
 		display: flex;
-		flex-direction: column;
-		gap: 15px;
-		font-size: 15px;
+		flex-direction: row;
+		gap: 10px;
+		font-size: 12px;
+	}
+
+	.fsocialmedia{
+		align-self: self-end;
 	}
 	
 	.ficons{
 		display: flex;
 		gap: 15px;
 		margin-top: 15px;
+		margin-left: 15px;
 	}
 	
 	form{
+		display: none;
 		width: 200px;
-		height: 300px;
+		height: 170px;
 		gap: 10px;
-		font-size: 20px;
+		font-size: 12px;
 	}
 
 	.translationfooter{
@@ -809,7 +777,7 @@ input{
 	}
 	
 	.copyright{
-		margin-top: 20px;
-		font-size: 15px;
+		margin-top: 10px;
+		font-size: 10px;
 	}
   }
